@@ -1,0 +1,29 @@
+<template>
+  <div id="app">
+    <!--<router-view></router-view>-->
+    <VHeader></VHeader>
+  </div>
+</template>
+
+<script>
+import VHeader from './components/Header/Header.vue';
+
+export default {
+  name: 'app',
+  components: {
+    VHeader
+  }
+}
+</script>
+
+<style lang="scss">
+@import './common/style/base.scss';
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  width: 100%;
+  position: relative;
+}
+</style>
